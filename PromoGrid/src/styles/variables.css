@@ -1,0 +1,40 @@
+:root {
+  font-family: "DM Sans", sans-serif;
+
+  /* Brand colors */
+  --color-primary: #6d4aff;
+  --color-primary-hover: #5738d4;
+  --color-primary-soft: #eee9ff;
+
+  /* Light theme */
+  --color-background: #f8f7fc;
+  --color-surface: #ffffff;
+  --color-text: #211b35;
+  --color-muted: #777187;
+  --color-border: #e8e4f0;
+
+  /* Status colors */
+  --color-success: #16845b;
+  --color-warning: #a76508;
+  --color-danger: #c53945;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --color-primary: #9b85ff;
+  --color-primary-hover: #b3a3ff;
+  --color-primary-soft: #30274b;
+
+  --color-background: #11111b;
+  --color-surface: #1b1b29;
+  --color-text: #f3f0ff;
+  --color-muted: #aaa5bd;
+  --color-border: #343247;
+
+  --color-success: #5cd6a0;
+  --color-warning: #ffd080;
+  --color-danger: #ff8790;
+
+  color-scheme: dark;
+}

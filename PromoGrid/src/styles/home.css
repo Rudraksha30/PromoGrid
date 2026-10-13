@@ -1,0 +1,452 @@
+/* =========================
+   HOMEPAGE BASE
+========================= */
+
+.home-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-page section {
+  scroll-margin-top: 24px;
+}
+
+.home-eyebrow {
+  display: inline-block;
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.7;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 570px;
+  padding: 90px 6% 80px;
+  text-align: center;
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    var(--color-primary-soft),
+    transparent 68%
+  );
+}
+
+.home-hero h1 {
+  margin: 22px 0 18px;
+  color: var(--color-text);
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 800;
+  letter-spacing: -2.5px;
+  line-height: 1.12;
+}
+
+.home-hero h1 span {
+  color: var(--color-primary);
+}
+
+.home-hero-description {
+  width: min(620px, 100%);
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.home-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.home-primary-button,
+.home-secondary-button,
+.home-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 13px 22px;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.home-primary-button,
+.home-cta-button {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.home-primary-button:hover,
+.home-cta-button:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px var(--color-primary-soft);
+}
+
+.home-secondary-button {
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.home-secondary-button:hover {
+  background: var(--color-primary-soft);
+  transform: translateY(-2px);
+}
+
+.home-preview-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: min(340px, 100%);
+  margin-top: 52px;
+  padding: 18px 22px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-surface);
+  text-align: left;
+  box-shadow: 0 12px 36px rgba(35, 20, 75, 0.06);
+}
+
+.home-preview-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-size: 25px;
+}
+
+.home-preview-card h2 {
+  margin: 0 0 5px;
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+.home-preview-card p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+/* =========================
+   SHARED SECTION STYLES
+========================= */
+
+.home-section {
+  padding: 88px 6%;
+}
+
+.home-section-heading {
+  max-width: 650px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.home-section-heading h2,
+.home-final-cta h2 {
+  margin: 12px 0;
+  color: var(--color-text);
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.25;
+}
+
+.home-section-heading > p,
+.home-final-cta > p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* =========================
+   CATEGORY CARDS
+========================= */
+
+.home-categories {
+  background: var(--color-surface);
+}
+
+.home-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.home-category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  min-height: 220px;
+  padding: 25px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-background);
+  text-decoration: none;
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.home-category-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
+  box-shadow: 0 12px 30px rgba(35, 20, 75, 0.07);
+}
+
+.home-category-icon,
+.home-benefit-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--color-primary-soft);
+  font-size: 23px;
+}
+
+.home-category-card h3,
+.home-benefit-card h3,
+.home-step h3 {
+  margin: 18px 0 8px;
+  color: var(--color-text);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.home-category-card p,
+.home-benefit-card p,
+.home-step p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.home-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 18px;
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.home-benefits {
+  background: var(--color-background);
+}
+
+.home-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.home-benefit-card {
+  padding: 25px 22px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-surface);
+  transition: transform 0.2s ease;
+}
+
+.home-benefit-card:hover {
+  transform: translateY(-4px);
+}
+
+.home-benefit-card h3 {
+  margin-top: 20px;
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.home-how-it-works {
+  background: var(--color-surface);
+}
+
+.home-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: min(1050px, 100%);
+  margin: 0 auto;
+}
+
+.home-step {
+  position: relative;
+  padding: 28px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-background);
+}
+
+.home-step-number {
+  display: inline-block;
+  color: var(--color-primary);
+  font-family: "Manrope", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.home-step h3 {
+  margin-top: 20px;
+}
+
+/* =========================
+   FINAL CALL TO ACTION
+========================= */
+
+.home-final-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 6%;
+  background: var(--color-primary-soft);
+  text-align: center;
+}
+
+.home-final-cta h2 {
+  margin-top: 14px;
+}
+
+.home-final-cta > p {
+  width: min(610px, 100%);
+}
+
+.home-cta-button {
+  background: var(--color-primary);
+}
+
+.home-cta-link {
+  padding: 12px;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.home-cta-link:hover {
+  color: var(--color-primary);
+}
+
+/* =========================
+   RESPONSIVE LAYOUT
+========================= */
+
+@media (max-width: 900px) {
+  .home-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-steps {
+    gap: 16px;
+  }
+
+  .home-step {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-hero {
+    min-height: auto;
+    padding: 75px 6% 60px;
+  }
+
+  .home-hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .home-hero-description {
+    font-size: 14px;
+  }
+
+  .home-section {
+    padding: 65px 6%;
+  }
+
+  .home-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .home-category-grid,
+  .home-benefit-grid,
+  .home-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .home-category-card {
+    min-height: 200px;
+  }
+
+  .home-preview-card {
+    margin-top: 40px;
+  }
+
+  .home-final-cta {
+    padding: 65px 6%;
+  }
+
+  .home-actions {
+    gap: 10px;
+  }
+
+  .home-primary-button,
+  .home-secondary-button,
+  .home-cta-button {
+    padding: 12px 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page *,
+  .home-page *::before,
+  .home-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
